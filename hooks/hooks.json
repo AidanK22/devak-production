@@ -1,0 +1,16 @@
+{
+  "hooks": [
+    {
+      "event": "session-start",
+      "action": "Read AGENTS.md and the request file before any role speaks."
+    },
+    {
+      "event": "before-handoff",
+      "action": "Run devak validate. Do not start the next role on a failing handoff."
+    },
+    {
+      "event": "before-external-side-effect",
+      "action": "Set gate to needs-human for post, pay, or file. Stop the chain."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "devak-production",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A coding-agent production line: roles, handoffs, and gates for building applications.",
+  "bin": {
+    "devak": "./bin/devak.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}
